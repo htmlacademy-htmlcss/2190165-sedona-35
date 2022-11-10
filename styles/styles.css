@@ -30,6 +30,17 @@ body {
   background-color: #f2f2f2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -84,10 +95,17 @@ body {
   margin-right: 28px;
 }
 
+.page-header-logo {
+  display: block;
+}
+
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 450px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -96,6 +114,8 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -104,6 +124,13 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.navigation-user-link {
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 12px;
 }
 
 .navigation-user-button {
@@ -119,19 +146,25 @@ body {
   background-image: url("../images/intro-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
 }
 
 .introduction-logo-text {
   display: block;
   margin: 0 auto;
+  margin-bottom: 82px;
 }
 
 .introduction-block {
+  padding-top: 69px;
+  padding-bottom: 90px;
   text-align: center;
   background-color: #ffffff;
 }
 
 .introduction-title {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -139,6 +172,7 @@ body {
 }
 
 .introduction-description {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -152,11 +186,22 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .advantages-item {
+  box-sizing: border-box;
+  padding-top: 103px;
+  padding-bottom: 121px;
+  padding-left: 85px;
+  padding-right: 85px;
   width: 400px;
   text-align: center;
+}
+
+.img-text-container {
+  padding-top: 92px;
+  padding-bottom: 111px;
 }
 
 .advantages-img-item {
@@ -174,11 +219,18 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.buy-item {
+  padding-top: 182px;
+  padding-bottom: 81px;
+}
+
 .buy-center-item {
   background-color: #ffffff;
 }
 
 .advantages-title {
+  display: block;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -190,13 +242,25 @@ body {
   color: #ffffff;
 }
 
+.buy-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
 /* HOTEL */
 
 .hotel-search {
+  padding: 96px 304px;
   background-color: #ffffff;
 }
 
 .hotel-search-ask {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -206,6 +270,8 @@ body {
 }
 
 .hotel-search-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -214,6 +280,7 @@ body {
 /* SUBSCRIBE */
 
 .subscribe {
+  padding: 96px 362px 104px;
   color: #ffffff;
   background-color: #808080;
   background-image: url("../images/subscribe-background.jpg");
@@ -222,6 +289,8 @@ body {
 }
 
 .subscribe-title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -230,6 +299,8 @@ body {
 }
 
 .subscribe-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -273,13 +344,30 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 35px;
   justify-content: space-between;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 142px;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-img {
+  display: block;
 }
 
 .footer-address-phone {
