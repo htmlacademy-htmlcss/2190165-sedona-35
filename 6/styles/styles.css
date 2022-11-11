@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+/* HEADER */
+
+.page-header {
+  color: #000000;
+  background: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.page-header-logo {
+  display: block;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  max-width: 330px;
+  margin-left: auto;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-user-link {
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 22px 12px;
+}
+
+.navigation-user-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* INTRO */
+
+.introduction {
+  color: #ffffff;
+  background-color: #808080;
+  background-image: url("../images/intro-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 51px;
+}
+
+.introduction-logo-text {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 82px;
+}
+
+.introduction-block {
+  padding-top: 69px;
+  padding-bottom: 90px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.introduction-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.introduction-description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/* ADVANTAGES */
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.advantages-item {
+  box-sizing: border-box;
+  padding-top: 103px;
+  padding-bottom: 121px;
+  padding-left: 85px;
+  padding-right: 85px;
+  width: 400px;
+  text-align: center;
+}
+
+.img-text-container {
+  padding-top: 92px;
+  padding-bottom: 111px;
+}
+
+.advantages-img-item {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.basic-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-center-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.buy-item {
+  padding-top: 182px;
+  padding-bottom: 81px;
+}
+
+.buy-center-item {
+  background-color: #ffffff;
+}
+
+.advantages-title {
+  display: block;
+  margin-bottom: 62px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.img-item-title{
+  color: #ffffff;
+}
+
+.buy-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0;
+}
+
+/* HOTEL */
+
+.hotel-search {
+  padding: 96px 304px;
+  background-color: #ffffff;
+}
+
+.hotel-search-ask {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-search-description {
+  margin: 0;
+  margin-bottom: 54px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+  padding: 96px 362px 104px;
+  color: #ffffff;
+  background-color: #808080;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  margin: 0;
+  margin-bottom: 54px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subscribe-email {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:focus {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+/* FOOTER */
+
+.page-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 142px;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-img {
+  display: block;
+}
+
+.footer-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-address-phone:hover {
+  color: #756157;
+}
+
+.footer-address-phone:focus {
+  color: #756157;
+}
+
+.footer-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
