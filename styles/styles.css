@@ -133,7 +133,13 @@ body {
   padding: 22px 12px;
 }
 
+.navigation-user-item {
+  display: flex;
+}
+
 .navigation-user-button {
+  align-self: center;
+  margin-left: 20px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -183,20 +189,23 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   list-style-type: none;
 }
 
 .advantages-item {
-  box-sizing: border-box;
   padding-top: 103px;
   padding-bottom: 121px;
-  padding-left: 85px;
-  padding-right: 85px;
   width: 400px;
   text-align: center;
+}
+
+.advantages-img-item {
+  grid-column: 1 / -1;
+  display: flex;
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .img-text-container {
@@ -204,11 +213,8 @@ body {
   padding-bottom: 111px;
 }
 
-.advantages-img-item {
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-  background-color: #82B3D3;
+.advantages-img {
+  display: block;
 }
 
 .basic-item {
@@ -248,14 +254,17 @@ body {
 }
 
 .advantages-description {
-  margin: 0;
+  max-width: 230px;
+  margin: 0 auto;
 }
 
 /* HOTEL */
 
 .hotel-search {
-  padding: 96px 304px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .hotel-search-ask {
@@ -264,23 +273,24 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
 
 .hotel-search-description {
-  margin: 0;
+  max-width: 592px;
+  margin: 0 auto;
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 /* SUBSCRIBE */
 
 .subscribe {
-  padding: 96px 362px 104px;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
   color: #ffffff;
   background-color: #808080;
   background-image: url("../images/subscribe-background.jpg");
@@ -294,16 +304,15 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .subscribe-description {
-  margin: 0;
+  max-width: 475px;
+  margin: 0 auto;
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .subscribe-email {
@@ -318,6 +327,8 @@ body {
 
 .subscribe-button {
   background-color: #82B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
 }
 
 .subscribe-button:hover {
